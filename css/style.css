@@ -285,10 +285,22 @@ body {
 }
 
 /* --------------PORTFOLIO---------------- */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .portfolio-btn {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -297,6 +309,7 @@ body {
   color: var(--secondary-title-color);
   background: var(--background-color);
   border: 0;
+  padding: 22px, 8px;
 }
 .current-btn {
   color: var(--primery-title-color);
@@ -315,9 +328,37 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
+  text-align: left;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primery-text-color);
+  text-align: left;
+  margin-top: 4px;
+}
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-item {
+  margin-left: 30px;
+}
+.portfolio-card-bottom {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.portfolio-work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portfolio-work-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
